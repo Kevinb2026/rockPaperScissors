@@ -6,28 +6,28 @@ function getComputerChoice(choice){
     return choice[Math.floor(Math.random() * choice.length)];
 }
 
-console.log(getComputerChoice(choice));
+//console.log(getComputerChoice(choice));
 
 // Playing the round ; determining winners //
 
 function round (playerSelection,computerSelection){
-if (playerSelection===computerSelection){
-console.log("it's a tie");
-}
-else if (playerSelection==="rock" && computerSelection === "scissors"){
-console.log ( " You win beats scissors" ) ;
-}
-else if (playerSelection === "paper" && computerSelection === "rock"){
-   console.log  ( "You win beats rock " );
-}
+    if (playerSelection===computerSelection){
+       console.log("it's a tie");
+    }
+    else if (playerSelection==="rock" && computerSelection === "scissors"){
+        console.log ( " You win beats scissors" ) ;
+    }
+    else if (playerSelection === "paper" && computerSelection === "rock"){
+        console.log  ( "You win beats rock " );
+    }
 
-else if (playerSelection === "scissors" && computerSelection === "paper"){
-    console.log ( "You win beats paper" ) ;
-}
+    else if (playerSelection === "scissors" && computerSelection === "paper"){
+        console.log ( "You win beats paper" ) ;
+    }
 
-else {
-    console.log (" You Lose");
-}
+    else {
+        console.log (" You Lose");
+    }
 
 }
 
